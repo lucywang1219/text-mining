@@ -38,6 +38,8 @@ Twelfth Plan             2011–2015
 Fourteenth Plan                  2021–2025
 Thirteenth Plan                  2016–2020
 
+
+
 #### Stemmed Words Analysis 
 Then I compared stemmed words to narrow down the word collection in order to better get an idea of what meanings are expressed across three different stages (early, mid, and late). By comparing early plans and later plans, I found that words like "environment", "ecosystem", "conserve", "carbon", "pollution", "Taiwan", "southwest", and "nuclear" only appear in the later plans, which suggests the country's near goals are shifting towards clean energy and environmental sustainability. Taiwan issue, nuclear energy development, as well as extensive development in the southwest are more of issues in the recent years. In contrast, words like "market", "industry", "reform", "economy", "communist", "manufacture", "highway", and "transport" appear in both periods, indicating those concepts have been long-term embedded in the national devlopment strategies.
 
