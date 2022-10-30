@@ -12,6 +12,8 @@ Because Wikipedia intoduces the content by numbered plans, the text is first bro
 
 For the **word frequency** part, I wanted to show the word frequencies using a visual histogram. At first, I was deciding whether to base this *draw_freqency_dstr()* function on *simply_words() or get_hist(), or rank_most_common()*. Becasue I was learning NLTK at the moment, I fist chose to use a whole text which can easly done by NLTK. However, I found that logically it is better to base the histogram on *rank_most_common()* -- it feels more natural to show a plot along with the list of words that appear the most. The histogram below shows the top 20 meaningful words that appear the most throughout the whole text. (I also drew the histogram for early plans and later plans in the testing code.) 
 ![image](https://user-images.githubusercontent.com/112499907/198900435-dcbcab8e-0170-438a-997c-9aa7e14c0844.png)
+The figure below is a word frequency histogram for later plans. 
+![image](https://user-images.githubusercontent.com/112499907/198901029-3891b550-b093-4037-bcad-b301cb4c91f3.png)
 
 
 After testing the overall word frequency, I decided to test how this frequency changes throughout the text (across different plan periods) using the **stemmed words analysis** and **dispersion plot**. At last, I added a **sentiment analysis** and a **similiarity analysis** for fun. 
