@@ -1,3 +1,29 @@
 # text-mining
 
 Please read the [instructions](instructions.md).
+
+1. Project Overview [~1 paragraph] What data source(s) did you use and what technique(s) did you use analyze/process them? What did you hope to learn/create?
+
+I used a Wikipedia page "Five-year plans of China". Primarily I exercised list/dictionaries/tuples functions to process the text and used NLTK module to analyze it. In particular, this text of my choice contains different sections in the order of time period, which makes it an excellent learning material for list/dictionary/tuple exercises. The nature of the text also makes it interesting to learn content-wise. For exmaple, I could learn how the Five-Year plans of China have evolved overtime and the period characteristics of the country's development. Therefore, I hoped to learn about the historic aspect of China's five-year plans and how China has changed its goal overtime. 
+
+2. Implementation [~1-2 paragraphs] Describe your implementation at a system architecture level. You should NOT walk through your code line by line, or explain every function (we can get that from your docstrings). Instead, talk about the major components, algorithms, data structures and how they fit together. You should also discuss at least one design decision where you had to choose between multiple alternatives, and explain why you made the choice you did.
+
+Because Wikipedia intoduces the content by numbered plans, I first broke down the text into sections and pack them into a dictionary. Since there are sub sections, there are nested dictionaries (under the thirteenth and the fourteened plan) as well. During this process, I also polished the text, for exmaple, eliminated unnecessary characters and irrelevent sections like "references".
+
+I first kept the "%" 
+Frist used the original words for getting the histogram but changed to using simplified words. 
+
+
+3. Results [~2-3 paragraphs + figures/examples] Present what you accomplished:
+If you did some text analysis, what interesting things did you find? Graphs or other visualizations may be very useful here for showing your results.
+
+First, from the sentiment analysis, I found that the overall sentiment is very neutral. Early, mid, or later plans all got the similar results. Later plans score the highest in nuetrality, while the early plans are highest in both extremes (neg and pos). Second, by listing out the plans and the year periods side by side, it is easy to notive that there is no Fourth Plan. It is reasonable to speculate that this may has to do with avoidance of using number four in the Chinese culture. 
+
+Then I compared stemmed words to narrow down the word collection in order to better get an idea of what meanings are expressed across three different stages (early, mid, and late). By comparing early plans and later plans, I found that words like "environment", "ecosystem", "conserve", "carbon", "pollution", "Taiwan", "southwest", and "nuclear" only appear in the later plans, which suggests the country's near goals are shifting towards clean energy and environmental sustainability. Taiwan issue, nuclear energy development, as well as extensive development in the southwest are more of issues in the recent years. In contrast, words like "market", "industry", "reform", "economy", "communist", "manufacture", "highway", and "transport" appear in both periods, indicating those concepts have been long-term embedded in the national devlopment strategies.
+
+Simliarly, I made a dispersion plot using NLTK to test some iconic words in text. The dispersion plot shows where each word appear in the text. This is particularly applicable to this text because this text introduces the plans by time period. Words like "ecosystems", "environment", and "carbon" appear later in the text as expected from the stemmed words comparison. "Technology" is mentioned throughout the text, indicating technology has been a core in the national devlopment goals. Same with "infrastructure". However, words like "agriculture" and "industrial" are frequently mention in the early-mid period but less frequently brought up in the later plans. This pattern is especially notable for "agriculture", which only appears once post mid-plans. This suggests the industrial shift from agriculture to third-tier indurtries like "healthcare", which only appear in the later plans. 
+
+
+4. Reflection [~1 paragraph] From a process point of view, what went well? What could you improve? Other possible reflection topics: Was your project appropriately scoped? Did you have a good plan for testing? How will you use what you learned going forward? What do you wish you knew before you started that would have helped you succeed?
+
+Extracting the text and learning about the NLTK module was an interesting process. I would improve the integrity of different functions. For example, I am still exploring what I can do with the SOP tree. I thinking I structured the testing plan fairly well that each plan is defined and divided into three groups (early, mid, and later), which makes testing easier. I wished I could learn thoroughly about different function I could use for text analysis and plan my function accordingly. Because I explored different functions along the way, I created many functons that I tought was not very relevent to the the text itself. For example, I created functions that count the total words and total different words in the text, which I later realized the number of different words or total words does not add any meaning to the interpretation of the text. Therefore, I deleted a lot of functions--even some complex ones. 
