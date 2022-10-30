@@ -22,23 +22,21 @@ For the **word frequency** part, I wanted to show the word frequencies using a v
 #### Sentiment Analysis & Plan Calendar 
 First, from the **sentiment analysis**, I found that the overall sentiment is very neutral. Early, mid, or later plans all got the similar results. Later plans score the highest in nuetrality, while the early plans are highest in both extremes (neg and pos). Second, by listing out the plans and the year periods side by side, it is easy to notice that there is no Fourth Plan. It is reasonable to speculate that this may has to do with avoidance of using number four in the Chinese culture. 
          
-         China Plan 
+>         China Plan 
 
-First Plan               1953–1957
-Second Plan              1958–1962
-Third Plan               1966–1970
-Fifth Plan               1976–1980
-Sixth Plan               1981–1985
-Seventh Plan             1986–1990
-Eighth Plan              1991–1995
-Ninth Plan               1996–2000
-Tenth Plan               2001–2005
-Eleventh Plan            2006–2010
-Twelfth Plan             2011–2015
-Fourteenth Plan                  2021–2025
-Thirteenth Plan                  2016–2020
-
-
+> First Plan               1953–1957
+> Second Plan              1958–1962
+> Third Plan               1966–1970
+> Fifth Plan               1976–1980
+> Sixth Plan               1981–1985
+> Seventh Plan             1986–1990
+> Eighth Plan              1991–1995
+> Ninth Plan               1996–2000
+> Tenth Plan               2001–2005
+> Eleventh Plan            2006–2010
+> Twelfth Plan             2011–2015
+> Fourteenth Plan          2021–2025
+> Thirteenth Plan          2016–2020
 
 #### Stemmed Words Analysis 
 Then I compared stemmed words to narrow down the word collection in order to better get an idea of what meanings are expressed across three different stages (early, mid, and late). By comparing early plans and later plans, I found that words like "environment", "ecosystem", "conserve", "carbon", "pollution", "Taiwan", "southwest", and "nuclear" only appear in the later plans, which suggests the country's near goals are shifting towards clean energy and environmental sustainability. Taiwan issue, nuclear energy development, as well as extensive development in the southwest are more of issues in the recent years. In contrast, words like "market", "industry", "reform", "economy", "communist", "manufacture", "highway", and "transport" appear in both periods, indicating those concepts have been long-term embedded in the national devlopment strategies.
