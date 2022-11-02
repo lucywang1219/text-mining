@@ -180,6 +180,10 @@ def get_key(p, dict):
 def main():
     with open('china_plan.pickle', 'rb') as input_file:
         fp = pickle.load(input_file)
+    # plan_dict = process_file(fp)
+    # plan_list = list(plan_dict.items())
+    # print(plan_list)
+
     dict = process_file(fp)
     hist = get_hist(fp)
 
