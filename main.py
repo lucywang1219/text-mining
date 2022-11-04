@@ -67,6 +67,9 @@ def print_china_plan_events(dict):
         k = k_list[0]
         t = (k, v) # (numbered plan, year period) 
         year_list.append(t)
+    plan14 = year_list[-2]
+    year_list.pop(-2)
+    year_list.append(plan14) 
     return year_list
 
 
