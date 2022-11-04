@@ -172,7 +172,6 @@ def get_similiarity_list(all_plans):
 
 """"""
 
-
 def get_key(p, dict):
     """This is a function that use value to find key in the dictionary. Used for printing results in testing."""
     v = {i for i in dict if dict[i] == p}
@@ -182,28 +181,26 @@ def get_key(p, dict):
 def main():
     with open('china_plan.pickle', 'rb') as input_file:
         fp = pickle.load(input_file)
-    # plan_dict = process_file(fp)
-    # plan_list = list(plan_dict.items())
-    # print(plan_list)
 
-    dict = process_file(fp)
+    d_section = process_file(fp)
     hist = get_hist(fp)
 
+
     # define plans 1 to 14
-    p1 = dict['First Plan (1953–1957)']
-    p2 = dict['Second Plan (1958–1962)']
-    p3 = dict['Third Plan (1966–1970)']
-    p5 = dict['Fifth Plan (1976–1980)']
-    p6 = dict["Sixth Plan (1981–1985)"]
-    p7 = dict['Seventh Plan (1986–1990)']
-    p8 = dict['Eighth Plan (1991–1995)']
-    p9 = dict['Ninth Plan (1996–2000)']
-    p10 = dict['Tenth Plan (2001–2005)']
-    p11 = dict["Eleventh Plan (2006–2010)"]
-    p12 = dict['Twelfth Plan (2011–2015)']
-    v13 = list(dict['Thirteenth Plan (2016–2020)'].values())
+    p1 = d_section['First Plan (1953–1957)']
+    p2 = d_section['Second Plan (1958–1962)']
+    p3 = d_section['Third Plan (1966–1970)']
+    p5 = d_section['Fifth Plan (1976–1980)']
+    p6 = d_section["Sixth Plan (1981–1985)"]
+    p7 = d_section['Seventh Plan (1986–1990)']
+    p8 = d_section['Eighth Plan (1991–1995)']
+    p9 = d_section['Ninth Plan (1996–2000)']
+    p10 = d_section['Tenth Plan (2001–2005)']
+    p11 = d_section["Eleventh Plan (2006–2010)"]
+    p12 = d_section['Twelfth Plan (2011–2015)']
+    v13 = list(d_section['Thirteenth Plan (2016–2020)'].values())
     p13 = ' '.join(v13)
-    v14 = list(dict['Fourteenth Plan (2021–2025)'].values())
+    v14 = list(d_section['Fourteenth Plan (2021–2025)'].values())
     p14 = ' '.join(v14)
     all_plans = [p1, p2, p3, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14]
 
@@ -218,12 +215,12 @@ def main():
     print(f'The sentiment score for later plans is {sentiment_analysis(later_plans_text)}.') # highest neutral
 
     # print by sections
-    for k, v in dict.items():
+    for k, v in d_section.items():
         print(k, '\n', v)
         print("\n")
 
     # print a China Plan calendar side by side
-    year_list = (print_china_plan_events(dict))
+    year_list = (print_china_plan_events(d_section))
     print('\t\t', 'China Plan', '\n')
     for t in year_list:
         print('{:<30}{}'.format(t[0], t[1]))
@@ -269,7 +266,7 @@ def main():
     f2 = p12
     ratio = compare_similiarity(f1, f2)
     print(
-        f'The similiarity ratio between {get_key(f1, dict)} and {get_key(f2, dict)} is {ratio}. \n')
+        f'The similiarity ratio between {get_key(f1, d_section)} and {get_key(f2, d_section)} is {ratio}. \n')
     print('The similiarity ratios for all plans are as follows: ')
     ratio_list = get_similiarity_list(all_plans)
     for i in range(len(ratio_list)):
