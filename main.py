@@ -80,7 +80,6 @@ def simplify_words(fp):
 
 def get_hist(fp):
     """to get a dictionary with different words but without stopwords or numbers and their frequency"""
-    # f = fp.split()
     words = simplify_words(fp)
     hist = {}  # {word, frequency}
     for word in words:
