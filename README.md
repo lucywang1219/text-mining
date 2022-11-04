@@ -14,9 +14,6 @@ For the **word frequency** part, I wanted to show the word frequencies using a v
 
 ![image](https://user-images.githubusercontent.com/112499907/198900435-dcbcab8e-0170-438a-997c-9aa7e14c0844.png)
 
-The figure below is a word frequency histogram for later plans. 
-![image](https://user-images.githubusercontent.com/112499907/198901029-3891b550-b093-4037-bcad-b301cb4c91f3.png)
-
 
 After testing the overall word frequency, I decided to test how this frequency changes throughout the text (across different plan periods) using the **stemmed words analysis** and **dispersion plot**. At last, I added a **sentiment analysis** and a **similiarity analysis** for fun. 
 
@@ -28,8 +25,35 @@ For the **word frequency** part, I wanted to show the word frequencies using a v
 #### Sentiment Analysis & Plan Calendar 
 First, from the **sentiment analysis**, I found that the overall sentiment is very neutral. Early, mid, or later plans all got the similar results. Later plans score the highest in nuetrality, while the early plans are highest in both extremes (neg and pos). Second, by listing out the plans and the year periods side by side, it is easy to notice that there is no Fourth Plan. It is reasonable to speculate that this may has to do with avoidance of using number four in the Chinese culture. 
 
+```
+                 China Plan 
+
+First Plan                    1953–1957
+Second Plan                   1958–1962
+Third Plan                    1966–1970
+Fifth Plan                    1976–1980
+Sixth Plan                    1981–1985
+Seventh Plan                  1986–1990
+Eighth Plan                   1991–1995
+Ninth Plan                    1996–2000
+Tenth Plan                    2001–2005
+Eleventh Plan                 2006–2010
+Twelfth Plan                  2011–2015
+Thirteenth Plan               2016–2020
+Fourteenth Plan               2021–2025
+```
+
 #### Frequency histograms 
 
+By comparing the frequency histograms of early and later plans, it is notable that early plans focuses on economic growth probably through raw production and construction. In contrast, the histogram for later plans suggests that China has realized large-scale urbanization and extensive economic growth, and the country is shifting to high value added industries like semiconductors. 
+
+Word frequency histogram for early plans
+
+![image](https://user-images.githubusercontent.com/112499907/199859192-80ff5a53-fbb2-49ad-8d1b-756b962c8a71.png)
+
+Word frequency histogram for later plans
+
+![image](https://user-images.githubusercontent.com/112499907/198901029-3891b550-b093-4037-bcad-b301cb4c91f3.png)
 
 #### Stemmed Words Analysis 
 Then I compared stemmed words to narrow down the word collection in order to better get an idea of what meanings are expressed across three different stages (early, mid, and late). By comparing early plans and later plans, I found that words like "environment", "ecosystem", "conserve", "carbon", "pollution", "Taiwan", "southwest", and "nuclear" only appear in the later plans, which suggests the country's near goals are shifting towards clean energy and environmental sustainability. Taiwan issue, nuclear energy development, as well as extensive development in the southwest are more of issues in the recent years. In contrast, words like "market", "industry", "reform", "economy", "communist", "manufacture", "highway", and "transport" appear in both periods, indicating those concepts have been long-term embedded in the national devlopment strategies.
